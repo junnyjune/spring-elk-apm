@@ -18,7 +18,7 @@ COPY --from=docker.elastic.co/observability/apm-agent-java:latest /usr/agent/ela
 
 ENV ELASTIC_APM_ENVIRONMENT=test
 ENV ELASTIC_APM_SERVICE_NAME=spring-apm-test
-ENV ELASTIC_APM_SERVER_URL=http://vc-stg-apm.kakaohealthcare.com
+ENV ELASTIC_APM_SERVER_URL=http://vc-dev-apm.kakaohealthcare.com
 ENV ELASTIC_APM_APPLICATION_PACKAGES=com.example.springapm
 ENV ELASTIC_APM_CAPTURE_BODY=all
 ENV ELASTIC_APM_PROFILING_INFERRED_SPANS_LIB_DIRECTORY=/apm-data
